@@ -1,0 +1,12 @@
+---
+title: OMG metalsmith-contentful
+contentful:
+  space_id: ntaqqv7rma1o
+  content_type: venue
+  filter:
+    fields.country[in]: 'United States,United Kingdom'
+  entry_template: venue.html
+template: venues.html
+---
+
+The data shown on this page has been generated usin the Music space. On this example the data request is more restrictive as it is using the filtering capabilities of the <a href="https://www.contentful.com/developers/documentation/content-delivery-api/#search-filter">Contentful's delivery API</a>. Here we are applying the <a href="https://www.contentful.com/developers/documentation/content-delivery-api/#search-filter-inclusion">inclusion</a> filter to get all the venues in the <strong>United States</strong> or in the <strong>United Kingdom</strong>.

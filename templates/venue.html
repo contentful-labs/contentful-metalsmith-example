@@ -1,0 +1,46 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Venue page</title>
+  <meta name="description" content="Page for venue">
+  <meta name="author" content="Contentful">
+  <link rel="stylesheet" href="scss/style.css?v=1.0">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-push-2 col-md-8">
+          <div class="cm-example">
+            <div class="cm-banner">
+              <img class="center-block" src="assets/logo.png"/>
+            </div>
+          <h1>Venues > {{data.fields.name}}</h1>
+          <div class="cm-entry-details cm-venue-details">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="cm-venue-image">
+                  <img class="center-block" src="http:{{data.fields.images.3.fields.file.url}}"/>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li><strong>Address</strong> {{data.fields.street}}, {{data.fields.city}}</li>
+                  <li><strong>Webpage</strong> <a href="{{data.fields.website}}">{{data.fields.website}}</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cm-footer">
+            <a href='www.contentful.com'>Contentful</a> - All your content, one API
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

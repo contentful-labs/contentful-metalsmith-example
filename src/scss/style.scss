@@ -1,0 +1,62 @@
+@import 'bootstrap';
+
+$lightOrange : #FF9966;
+$contentfulBlue : #4DB5E3;
+$contentfulGray : #3C3C3C;
+
+h1 {
+  text-align: center;
+}
+
+body {
+  background: $contentfulBlue;
+  font-family: 'Open Sans', sans-serif;
+}
+
+
+.cm-banner {
+  background: white;
+}
+
+.cm-footer {
+  background: $contentfulGray;
+  color: #ddd;
+  text-align: center;
+  font-size: 18px;
+  padding: 10px 0;
+}
+
+.cm-example {
+  margin-top: 15px;
+  background: white;
+}
+
+.cm-example-info {
+  margin: 12px 0;
+  padding: 0 8px;
+  font-size:17px;
+}
+
+.cm-venues {
+  background: #f3f3f3;
+  padding: 0 8px;
+
+  table {
+    margin-bottom: 0px;
+  }
+
+  .cm-venue-image {
+    margin: 20px 0;
+  }
+
+}
+
+.cm-entry-details {
+  margin: 30px 0;
+}
+
+.cm-album-details, .cm-venue-image {
+      img {
+        border: 2px solid #aaa;
+      }
+}

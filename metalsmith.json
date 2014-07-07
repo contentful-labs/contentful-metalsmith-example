@@ -1,0 +1,22 @@
+{
+  "source": "src",
+  "destination": "build",
+  "plugins": {
+    "metalsmith-clean" : true,
+    "metalsmith-drafts" : true,
+    "contentful-metalsmith": {
+      "accessToken" : "b617ee1f8cd5968823d5ea8aa63fbadb92ce65f2ef9c6f64cee6a5b184111279"
+    },
+    "metalsmith-templates" : {
+      "engine" : "handlebars",
+      "directory" : "templates"
+    },
+    "metalsmith-sass" : {
+      "includePaths" : ["bower_components/bootstrap-sass-official/assets/stylesheets/"]
+    },
+    "metalsmith-assets" : {
+      "source" : "assets/",
+      "destination" : "assets/"
+    }
+  }
+}

@@ -1,0 +1,47 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title>Album page</title>
+  <meta name="description" content="Page for album">
+  <meta name="author" content="Contentful">
+  <link rel="stylesheet" href="scss/style.css?v=1.0">
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-push-2 col-md-8">
+          <div class="cm-example">
+            <div class="cm-banner">
+              <img class="center-block" src="assets/logo.png"/>
+            </div>
+          <h1>Albums > {{data.fields.title}}</h1>
+          <div class="cm-entry-details cm-album-details">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="cm-album-image">
+                  <img class="center-block" src="http:{{data.fields.images.2.fields.file.url}}"/>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <ul class="list-unstyled">
+                  <li><strong>Artist</strong> {{data.fields.artist.fields.name}}</li>
+                  <li><strong>Release date</strong> {{data.fields.releaseDate}}</li>
+                  <li><strong>Note</strong> {{data.fields.note}}</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="cm-footer">
+            <a href='www.contentful.com'>Contentful</a> - All your content, one API
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
