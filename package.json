@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "description": "A example app that uses the contentful-metalsmith plugin",
   "main": "index.js",
+  "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "gazer --pattern '{src,templates}/**/*' metalsmith"
