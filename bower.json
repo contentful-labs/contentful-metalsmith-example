@@ -1,0 +1,21 @@
+{
+  "name": "contentful-metalsmith-example",
+  "version": "0.1.1",
+  "homepage": "https://github.com/contentful/contentful-metalsmith-example",
+  "authors": [
+    "Contentful"
+  ],
+  "description": "An example to showcase the ingration between Contentful and Metalsmith",
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap-sass-official": "~3.2.0"
+  }
+}

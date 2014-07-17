@@ -1,16 +1,18 @@
 {
   "name": "contentful-metalsmith-example",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A example app that uses the contentful-metalsmith plugin",
   "main": "index.js",
   "private": true,
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "watch": "gazer --pattern '{src,templates}/**/*' metalsmith"
+    "watch": "gazer --pattern '{src,templates}/**/*' metalsmith",
+    "prepublish" : "bower install"
   },
   "author": "",
   "license": "MIT",
   "dependencies": {
+    "bower": "^1.3.8",
     "contentful-metalsmith": "0.1.0",
     "gazer": "0.0.3",
     "handlebars": "^2.0.0-alpha.4",
