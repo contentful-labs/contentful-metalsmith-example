@@ -13,7 +13,7 @@ is configured to fetch data from a public [space](https://www.contentful.com/dev
 
   ```shell
     $ git clone git@github.com:contentful/contentful-metalsmith-example.git
-    $ cd contentful-metalsmith
+    $ cd contentful-metalsmith-example
     $ npm install
   ```
 
