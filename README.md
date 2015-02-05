@@ -4,7 +4,7 @@ An example to showcase the integration of [Metalsmith](http://www.metalsmith.io/
 
 # About
 
-The goal of this project is to show how easily you can create static sites using the content (text, images, links, etc.) stored on [Contentful](www.contentful.com). This project
+The goal of this project is to show how easily you can create static sites using the content (text, images, links, etc.) stored on [Contentful](http://www.contentful.com). This project
 is configured to fetch data from a public [space](https://www.contentful.com/developers/documentation/content-delivery-api/http/#spaces) using [Contentful's Content Delivery API](https://www.contentful.com/developers/documentation/content-delivery-api/http/#spaces).
 
 # Usage
