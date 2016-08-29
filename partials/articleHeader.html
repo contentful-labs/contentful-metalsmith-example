@@ -1,0 +1,35 @@
+<div class="c-article__header">
+  {{#if author.length }}
+    <ul class="c-article__authors">
+      {{#each author }}
+        <li class="c-article__author">
+          <div class="c-article__authorImage">
+            <img src="{{ fields.profilePhoto.fields.file.url }}?w=96">
+          </div>
+          <span>{{ fields.name }}</span>
+      {{/each}}
+    </ul>
+  {{/if}}
+
+  <h1 class="c-article__headline"><a href="/{{ _fileName }}">{{ title }}</a></h1>
+
+  {{#if date }}
+    <div class="c-article__date">
+      <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+        <path d="M9 11H7v2h2v-2zm4 0h-2v2h2v-2zm4 0h-2v2h2v-2zm2-7h-1V2h-2v2H8V2H6v2H5c-1.11 0-1.99.9-1.99 2L3 20c0 1.1.89 2 2 2h14c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 16H5V9h14v11z"/>
+        <path d="M0 0h24v24H0z" fill="none"/>
+      </svg>
+      <date>{{ date }}</date>
+    </div>
+  {{/if}}
+
+  {{#if category.length }}
+    <ul class="c-article__tags">
+      {{#each category }}
+        <li>{{ fields.title }}
+      {{/each}}
+    </ul>
+  {{/if}}
+
+
+</div>

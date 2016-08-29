@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="Contentful">
+  <link rel="stylesheet" href="/style/main.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <main class="l-container">
+    {{> header}}
+
+    <div class="c-notification" data-markdown>
+      {{{ contents }}}
+    </div>
+    <ul class="c-paddedList">
+      {{#each data.entries}}
+        <li>
+          <img src="{{ fields.photo.fields.file.url }}?w=800">
+      {{/each}}
+    </ul>
+  </main>
+  <footer class="c-footer u-marginTopAuto">
+    <div class="l-container u-textAlignCenter">
+      <a href='www.contentful.com'>Contentful</a> - Like a CMS... without the bad bits.
+    </div>
+  </footer>
+</body>
+</html>

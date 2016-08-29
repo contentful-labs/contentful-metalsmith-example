@@ -1,0 +1,35 @@
+@import "variables";
+@import "base";
+@import "components/article";
+@import "components/footer";
+@import "components/list";
+@import "components/nav";
+@import "components/notification";
+@import "util";
+
+.c-header {
+  &__logo {
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+
+.l-container {
+  max-width: 52em;
+  padding: 0 1em;
+  margin: 0 auto;
+}
+
+.c-post {
+  &--preview {
+    padding: 3em 0;
+  }
+}
+
+.c-posts {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
