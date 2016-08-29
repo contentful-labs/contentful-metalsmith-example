@@ -34,10 +34,10 @@ The result is a blog site including several posts and authors.
 After running metalsmith you will have several files into the ```build``` dir. Each of this files demonstrate a capability of the [contentful-metalsmith plugin](https://github.com/contentful/contentful-metalsmith):
 
   * ```authors.html```, shows only entries with [contentType](https://www.contentful.com/developers/documentation/content-delivery-api/http/#content-types) 'author'
-  * ```index.html```, shows a list of entries with [contentType](https://www.contentful.com/developers/documentation/content-delivery-api/http/#content-types) 'article'.
+  * ```index.html```, shows a list of entries with [contentType](https://www.contentful.com/developers/documentation/content-delivery-api/http/#content-types) 'article' and rendered child pages for every article
   * ```images.html```, shows a list of entries with [contentType](https://www.contentful.com/developers/documentation/content-delivery-api/http/#content-types) 'image' but for a completely different space, which can become handy when you use several spaces.
   * ```filtered.html```, shows a list of [entries](https://www.contentful.com/developers/documentation/content-delivery-api/http/#entries) filtered by keyword 'rabbit'
-  * ```article/*.html```, shows only entries with [contentType](https://www.contentful.com/developers/documentation/content-delivery-api/http/#content-types) 'album'.
+  * ```article/*.html```, shows one entry resulting of rendering all articles
 
 For more info on the capabalities of the plugin visit [its repo](https://github.com/contentful/contentful-metalsmith).
 
