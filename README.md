@@ -11,6 +11,8 @@ is configured to fetch data from a public [space](https://www.contentful.com/dev
 
 The result is a blog site including several posts and authors.
 
+It also uses [handlebars templates](http://handlebarsjs.com/) for templating and [sass](http://sass-lang.com/) for writing CSS.
+
 # Usage
 
 1. Clone and install the project dependencies
