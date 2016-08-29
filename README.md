@@ -30,7 +30,10 @@ It also uses [handlebars templates](http://handlebarsjs.com/) for templating and
     $ npm start
 
     # for development and constant building
-    $ npm run watch
+    # starts watchers to react to file changes,
+    # spawns an http server and opens the built
+    # site in your browser
+    $ npm run dev
   ```
 
 After running metalsmith you will have several files into the ```build``` dir. Each of this files demonstrate a capability of the [contentful-metalsmith plugin](https://github.com/contentful/contentful-metalsmith):
