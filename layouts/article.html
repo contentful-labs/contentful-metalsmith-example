@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="Contentful">
+  <link rel="stylesheet" href="/style/main.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <main class="l-container">
+    {{> header}}
+
+    <div class="c-notification">
+      <p>The data shown on this page has been generated using the example blog space.</p>
+      <p>In this example the request is limited to a single entry resulting from the fetched entries in <a href="/index.html">index.html</a>.</p>
+    </div>
+    <p>
+      <a href="/{{ _parentFileName }}">Go back</a>
+    </p>
+    <article class="c-article">
+      {{> articleHeader data.fields _fileName=_fileName }}
+
+      <div data-markdown>{{ data.fields.body }}</div>
+
+      {{> articleAuthors data.fields }}
+    </article>
+  </main>
+  {{> footer}}
+</body>
+</html>

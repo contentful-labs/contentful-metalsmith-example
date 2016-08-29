@@ -1,0 +1,21 @@
+.c-paddedList {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    margin: 0;
+    padding : 2em 0;
+  }
+}
+
+.c-list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  > li {
+    margin: 0;
+    padding : .5em 0;
+  }
+}

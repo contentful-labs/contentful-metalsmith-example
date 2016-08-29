@@ -1,8 +1,35 @@
 ---
-title: OMG metalsmith-contentful
+title: Contentful Blog Example space - All Entries
 contentful:
-  space_id: ntaqqv7rma1o
-template: entries.html
+  content_type: '*'
+layout: entries.html
 ---
 
-The data shown on this page has been generated usin the Music space. On this example we are requesting all the <a href="https://www.contentful.com/developers/documentation/content-delivery-api/http/#entries">entries</a> on the space and showing some details (its <a href="https://www.contentful.com/developers/documentation/content-delivery-api/http/#content-types">ContentType</a>, Id and last update date) about each one.
+The data shown on this page has been generated using the example blog space.
+
+On this example the request is not limited. It fetches all entries.
+
+```
+title: Contentful Blog Example space - all entries
+contentful:
+  content_type: '*'
+layout: index.html
+```
+
+The entries are available in `data.entries` or grouped by content type in `data.contentTypes`.
+
+```
+<!-- all entries -->
+<ul>
+  {{#each data.entries }}
+    <li>{{sys.id}}</li>
+  {{/each}}
+</ul>
+
+<!-- entries grouped by content type id -->
+<ul>
+  {{#each data.contentTypes.2wKn6yEnZewu2SCCkus4as }}
+    <li>{{fields.title}}</li>
+  {{/each}}
+</ul>
+```

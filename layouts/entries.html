@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ title }}</title>
+  <meta name="description" content="{{ description }}">
+  <meta name="author" content="Contentful">
+  <link rel="stylesheet" href="/style/main.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <main class="l-container">
+    {{> header}}
+
+    <div class="c-notification" data-markdown>
+      {{{ contents }}}
+    </div>
+      <h1>Authors</h1>
+
+      <ul class="c-list">
+      {{#each data.contentTypes.1kUEViTN4EmGiEaaeC6ouY }}
+        <li>
+          <div class="c-article u-marginBottomLarge">
+            {{ fields.name }}
+          </div>
+        </li>
+      {{/each}}
+      </ul>
+
+      <h1>Articles</h1>
+      <ul class="c-list">
+      {{#each data.contentTypes.2wKn6yEnZewu2SCCkus4as }}
+        <li>
+          <div class="c-article u-marginBottomLarge">
+            {{ fields.title }}
+          </div>
+        </li>
+      {{/each}}
+      </ul>
+  </main>
+  {{> footer}}
+</body>
+</html>

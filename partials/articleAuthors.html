@@ -1,0 +1,11 @@
+<div class="c-article__authorSumUp">
+  {{#if author.length }}
+    <ul class="c-article__authors">
+      {{#each author }}
+        <li>
+          {{> articleAuthor this }}
+        </li>
+      {{/each}}
+    </ul>
+  {{/if}}
+</div>
