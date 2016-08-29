@@ -3,9 +3,9 @@
   "version": "1.0.0",
   "description": "A example app that uses the contentful-metalsmith plugin",
   "main": "index.js",
-  "private": true,
   "scripts": {
     "start": "node build.js",
+    "lint": "standard \"helpers/**/*.js\" \"build.js\"",
     "test": "echo \"Error: no test specified\" && exit 1",
     "watch": "gazer --pattern '{src,layouts,helpers,partials}/**/*' node build.js"
   },
