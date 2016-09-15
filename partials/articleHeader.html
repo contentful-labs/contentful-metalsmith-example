@@ -25,9 +25,9 @@
 
   {{#if category.length }}
     <ul class="c-article__tags">
-      {{#each category }}
+      {{#eachSortedByTitle category }}
         <li>{{ fields.title }}
-      {{/each}}
+      {{/eachSortedByTitle}}
     </ul>
   {{/if}}
 
