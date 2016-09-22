@@ -1,6 +1,7 @@
 @import "variables";
 @import "base";
 @import "components/article";
+@import "components/featured";
 @import "components/footer";
 @import "components/list";
 @import "components/nav";
@@ -8,6 +9,8 @@
 @import "util";
 
 .c-header {
+  position: relative;
+
   &__logo {
     display: block;
     margin: 0 auto;

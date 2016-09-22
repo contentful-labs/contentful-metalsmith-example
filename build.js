@@ -27,7 +27,15 @@ Metalsmith(__dirname)
   .destination('build')
   .use(contentful({
     space_id: 'w7sdyslol3fu',
-    access_token: 'baa905fc9cbfab17b1bc0b556a7e17a3e783a2068c9fd6ccf74ba09331357182'
+    access_token: 'baa905fc9cbfab17b1bc0b556a7e17a3e783a2068c9fd6ccf74ba09331357182',
+    common: {
+      featured_author: {
+        limit: 1,
+        filter: {
+          'sys.id[in]': '5JQ715oDQW68k8EiEuKOk8'
+        }
+      }
+    },
   }))
   .use(layouts({
     engine: 'handlebars',
