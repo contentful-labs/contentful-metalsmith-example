@@ -1,6 +1,6 @@
 # contentful-metalsmith-example
 
-An example to showcase the integration of [Metalsmith](http://www.metalsmith.io/) and [Contentful](www.contentful.com) by using a metalsmith plugin: [contentful-metalsmith](https://github.com/contentful/contentful-metalsmith).
+An example to showcase the integration of [Metalsmith](http://www.metalsmith.io/) and [Contentful](https://www.contentful.com) by using a metalsmith plugin: [contentful-metalsmith](https://github.com/contentful/contentful-metalsmith).
 
 # About
 
