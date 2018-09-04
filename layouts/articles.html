@@ -21,7 +21,7 @@
           <div class="c-article c-card u-marginBottomLarge">
             {{> articleHeader fields _fileName=_fileName }}
 
-            <p data-markdown>{{ shorten fields.body }}</p>
+            <p>{{ fields.description  }}</p>
             <a href="{{ _fileName }}">Read more...</a>
           </div>
         </li>

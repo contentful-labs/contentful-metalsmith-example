@@ -16,16 +16,18 @@
       <p>The data shown on this page has been generated using the example blog space.</p>
       <p>In this example the request is limited to a single entry resulting from the fetched entries in <a href="/index.html">index.html</a>.</p>
     </div>
-    <p>
-      <a href="/{{ _parentFileName }}">Go back</a>
-    </p>
     <article class="c-article">
+      <img class="c-article__image" src="{{ data.fields.heroImage.fields.file.url }}?w=800&h=450&fit=fill" />
+
       {{> articleHeader data.fields _fileName=_fileName }}
 
       <div data-markdown>{{ data.fields.body }}</div>
 
       {{> articleAuthors data.fields }}
     </article>
+    <p>
+      <a href="/{{ _parentFileName }}">Go back</a>
+    </p>
   </main>
   {{> footer}}
 </body>
