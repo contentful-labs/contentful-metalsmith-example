@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Contentful Blog Example space - All Entries</title>
+  <meta name="description" content="">
+  <meta name="author" content="Contentful">
+  <link rel="stylesheet" href="/style/main.css?v=1.0">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+</head>
+<body>
+  <main class="l-container">
+    <header class="c-header">
+      <img class="c-header__logo" src="/assets/logo.png">
+      <nav class="c-nav">
+        <ul class="c-nav__list">
+          <li><a href="/index.html">Home</a></li>
+          <li><a href="/authors.html">Authors</a></li>
+          <li><a href="/images.html">Images</a></li>
+          <li><a href="/entries.html">Entries</a></li>
+          <li><a href="/filtered.html">Filtered Entries</a></li>
+        </ul>
+      </nav>
+    
+      <div class="c-featured">
+        New: Mike Springer
+      </div>
+    </header>
+
+    <div class="c-notification"><p>The data shown on this page has been generated using the example blog space.</p>
+<p>On this example the request is not limited. It fetches all entries.</p>
+<pre><code>title: Contentful Blog Example space - all entries
+contentful:
+  content_type: &apos;*&apos;
+layout: index.html
+</code></pre><p>The entries are available in <code>data.entries</code> or grouped by content type in <code>data.contentTypes</code>.</p>
+<pre><code>&lt;!-- all entries --&gt;
+&lt;ul&gt;
+  {{#each data.entries }}
+    &lt;li&gt;{{sys.id}}&lt;/li&gt;
+  {{/each}}
+&lt;/ul&gt;
+
+&lt;!-- entries grouped by content type id --&gt;
+&lt;ul&gt;
+  {{#each data.contentTypes.2wKn6yEnZewu2SCCkus4as }}
+    &lt;li&gt;{{fields.title}}&lt;/li&gt;
+  {{/each}}
+&lt;/ul&gt;
+</code></pre></div>
+      <h1>Authors</h1>
+
+      <ul class="c-list">
+        <li>
+          <div class="c-article u-marginBottomLarge">
+            Mike Springer
+          </div>
+        </li>
+        <li>
+          <div class="c-article u-marginBottomLarge">
+            Lewis Carroll
+          </div>
+        </li>
+      </ul>
+
+      <h1>Articles</h1>
+      <ul class="c-list">
+        <li>
+          <div class="c-article u-marginBottomLarge">
+            Down the Rabbit Hole
+          </div>
+        </li>
+        <li>
+          <div class="c-article u-marginBottomLarge">
+            Seven Tips From Ernest Hemingway on How to Write Fiction
+          </div>
+        </li>
+      </ul>
+  </main>
+  <footer class="c-footer u-marginTopAuto">
+    <div class="l-container u-textAlignCenter">
+      <a href="http://www.contentful.com">Contentful</a> - Like a CMS... without the bad bits.
+    </div>
+  </footer></body>
+</html>
