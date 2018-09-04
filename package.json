@@ -18,7 +18,7 @@
   "license": "MIT",
   "dependencies": {
     "bootstrap-sass": "^3.3.7",
-    "contentful-metalsmith": "^0.9.0",
+    "contentful-metalsmith": "^0.11.0",
     "gazer": "^0.0.3",
     "glob": "^7.0.6",
     "handlebars": "^4.0.0",
