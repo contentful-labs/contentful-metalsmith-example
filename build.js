@@ -26,13 +26,13 @@ Metalsmith(__dirname)
   .source('src')
   .destination('build')
   .use(contentful({
-    space_id: 'w7sdyslol3fu',
-    access_token: 'baa905fc9cbfab17b1bc0b556a7e17a3e783a2068c9fd6ccf74ba09331357182',
+    space_id: '0donwr49sni0',
+    access_token: '0cf732f716caa7bd8f56ccddd30cc86d4301d5f386efa8bf891b763261db6bf8',
     common: {
       featured_author: {
         limit: 1,
         filter: {
-          'sys.id[in]': '5JQ715oDQW68k8EiEuKOk8'
+          'sys.id[in]': '15jwOBqpxqSAOy2eOO4S0m'
         }
       }
     },

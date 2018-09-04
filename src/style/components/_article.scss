@@ -78,21 +78,9 @@
     }
   }
 
-  &__tags {
-    margin: 0;
-    padding: 0;
-
-    display: inline-block;
-
-    > li {
-      margin-right: .5em;
-      padding: .25em .5em;
-      background: $lightGray;
-      color: $contentfulGray;
-      display: inline-block;
-      border-radius: .5em;
-      letter-spacing: 1px;
-      font-size: .85em;
-    }
+  &__image {
+    display: block;
+    margin-bottom: 1rem;
+    border-radius: .5rem;
   }
 }
